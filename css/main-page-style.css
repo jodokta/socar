@@ -1,0 +1,101 @@
+@font-face{
+    font-family:'socarfont'; /*글꼴*/
+    src: local('SDMiSaeng'),
+        url(../font/AvenirNextLTPro-Heavy.otf);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    vertical-align: baseline;
+}
+
+#header{
+    background-color: transparent;
+    width:100%;
+    height: 60px;
+}
+
+article>span{
+    color: #0BB8FF;
+}
+
+#logo{
+width: 112px;
+height: 23px;
+color: white;
+z-index: 4;
+position:fixed;
+top:18.5px;
+left:40.8px;
+
+}
+.hamberger-patties{
+    width: 23px;
+    height: 3px;
+    
+}
+html{
+    width: 100vw;
+}
+#main-page{
+    width: 100%;
+    height: auto;
+    display: block;
+    font-family: "socarfont";
+}
+
+#copyright{
+    display: block;
+    z-index: 4;
+    text-align: center;
+    color: #fff;
+    font-size: clamp(30pt, 1vw, 48pt);
+    line-height: 1.4;
+    text-shadow: 1px 1px 2px rgb(0 0 0 / 40%); 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#intro{
+    position: relative;
+}
+
+#intro-img{
+    width: 100vw;    
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+.articles{
+    display: block;
+    max-width: 800px;
+    width: auto;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    
+}
+
+.article-img{
+    max-width: 800px;
+    width:100%;
+    height:100%;
+}
+
+p{
+    margin-bottom: 50px;
+    font-size: 14pt;
+    letter-spacing: -0.025em;
+    line-height: 1.5;
+    color: #aaa;
+    font-weight: bold;
+}
+article{
+    font-size: 28pt;
+    text-align: center;
+}
