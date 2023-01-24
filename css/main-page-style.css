@@ -1,21 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700');
+
 @font-face{
     font-family:'socarfont'; /*글꼴*/
     src: local('SDMiSaeng'),
         url(../font/AvenirNextLTPro-Heavy.otf);
 }
+@font-face {
+	font-family: 'sdg-m';
+	src: url('../fonts/SDGothicNeobTTF-dMd.eot');
+	src: url('../fonts/SDGothicNeobTTF-dMd.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/SDGothicNeobTTF-dMd.woff2') format('woff2'),
+	url('../fonts/SDGothicNeobTTF-dMd.woff') format('woff');
+}
 
 *{
     margin: 0px;
     padding: 0px;
+    border: 0;
     vertical-align: baseline;
+    font-family: "socarfont";
+    word-break: break-all;
 }
 
+body{
+    overflow-x: hidden;
+    width: 100%;
+}
 #header{
     background-color: transparent;
     width:100%;
     height: 60px;
+    display: flex;
+    position: fixed;
 }
 
+#socarlogo{
+    width: 112px;
+    position: absolute;
+    top: 50%;
+    left: 40px;
+}
 article>span{
     color: #0BB8FF;
 }
@@ -35,67 +59,135 @@ left:40.8px;
     height: 3px;
     
 }
-html{
-    width: 100vw;
-}
-#main-page{
+
+article img{
+    position: relative;
     width: 100%;
     height: auto;
-    display: block;
-    font-family: "socarfont";
 }
 
 #copyright{
-    display: block;
+    display: flex;
     z-index: 4;
     text-align: center;
     color: #fff;
     font-size: clamp(30pt, 1vw, 48pt);
     line-height: 1.4;
+    letter-spacing: 0;
     text-shadow: 1px 1px 2px rgb(0 0 0 / 40%); 
-    position: absolute;
-    top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%);
+    overflow: hidden;
+    padding: 5px 10px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
 }
 #intro{
+    display: flex;
+    align-content: center;
     position: relative;
+    margin-bottom: 70px;
 }
-
 #intro-img{
-    width: 100vw;    
-    height: auto;
-    display: block;
-    object-fit: cover;
-}
-.articles{
-    display: block;
-    max-width: 800px;
-    width: auto;
-    position: relative;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 50px;
-    
-}
-
-.article-img{
-    max-width: 800px;
-    width:100%;
-    height:100%;
+    width: 100%;    
+    height: 100%;
+	vertical-align: middle;
 }
 
 p{
-    margin-bottom: 50px;
     font-size: 14pt;
     letter-spacing: -0.025em;
     line-height: 1.5;
-    color: #aaa;
-    font-weight: bold;
+    margin-bottom: 50px;
+
 }
 article{
     font-size: 28pt;
+    font-weight:700;
+    color: #aaa;
+    margin-bottom: 50px;
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+h3{
+    font-size: 40px;
+    font-weight: normal;
+    color: #374553;
+    margin-bottom: 20px;
+}
+
+#suggest{
     text-align: center;
+    font-size: 28pt;
+    color:#aaa;
+    line-height: 1.5;
+    font-weight: normal;
+    font-family: "socarfont", 'sdg-m', sans-serif;
+}
+
+blue{
+    color: #0bb8ff;
+}
+
+footer{
+    background-color: #28323C;
+    width: 100%;
+    padding: 40px 18px 100px;
+    overflow: auto;
+    color:#646F7C; 
+    font-size: 10pt;
+    margin:0 auto; text-align:center;
+}
+
+footer p{
+    font-size: 10pt;
+    margin-bottom: 0px;
+}
+.sns-list{
+    text-align: left;
+    margin-bottom: 16px;
+    padding-left: 300px;
+}
+
+li{
+    display: inline;
+    padding-right: 10px;
+}
+
+nav ul{
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8px;
+    font-size: 12pt;
+}
+
+nav ul li{
+    padding-right: 25px;
+}
+a{
+    text-decoration-line: none;
+    text-decoration-style: none;
+    color: #C5C8CE;
+    letter-spacing: 0;
+    word-spacing: 0;
+}
+ul strong{
+    color: white;
+}
+.footer-bottom{
+    text-align: center;
+}
+.company-information{
+    display: inline-block;
+}
+dt, dd{
+    display: inline;
+}
+.copyright p{
+    display: inline;
 }

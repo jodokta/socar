@@ -1,92 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Document</title>
-    <link rel="stylesheet" href="/socar/css/main-page-style.css">
-
+    <title>차가 필요한 모든 순간, 쏘카</title>
+    <link rel="stylesheet" href="/css/main-page-style.css">
 </head>
-
-<body id="main-page">
-<main>
-    <intro-section>
-        <div id="intro">
-        <img src="./img/main_visual_fullscreen.jpg" alt="socar-intro" id="intro-img">
-        <p id="copyright">
-            차가 필요한 <br>모든 순간, 쏘카
-        </p>
-        </div>
-        <header id="header">
-            <a href="socar.kr">    
-                <logo>
-                    <img src="./img/logo-w.svg" alt="Socar-logo" id="logo">
-                </logo>
-            </a>
+<body>
+    <header id = "header">
+        <a href="https://www.socar.kr/">
+            <img src="img/logo-w.svg" alt="socar logo" id = "socarlogo">
+        </a>
+        <a href="#">
             
-            <hamberger>
-                <span class="hamberger-patties"></span>
-                <span class="hamberger-patties"></span>
-            </hamberger>
-    
-        </header>
-    </intro-section>
-    <wrap-section>
-        <article1 class = "articles">
-            <h2>24시간 언제나</h2><h2></h2><br>
-            <p>한밤중이나 주말에도 스마트폰으로<br>
-            시간에 구애받지 않고<br>
-            쏘카와 함께 이동하세요.<br></p>
-            <img src="/socar/img/usp_a.jpg" alt="man laughing by car" class = article-img>
-        </article1>
-
-        <article2 class = "articles">
-            <h2>원하는 곳에서</h2>
-            <h2></h2>
+        </a>
+    </header>
+    <section id ="intro">
+        <figure id = "intro-img">
+            <img src="/img/main_visual_fullscreen.jpg" alt="차문을 열고 그윽한 표정을 짓는 원빈">
+        </figure>
+        <h2 id = "copyright">
+            <b>차가 필요한
             <br>
-            <p>내 주변 3분 거리 쏘카존에서<br> 혹은 내가 있는 곳으로 쏘카를 불러<br> 어디서나 편하게 출발하세요.</p>
-            <img src="/socar/img/usp_b.jpg" alt="man laughing by car" class = article-img>
-        </article2>
+            모든 순간, 쏘카</b>
+        </h2>
+    </section>
+
+    <main>
+        <div class="fullbody">
+            <article class="articles">
+                <h3>24시간 언제나</h3>
+                <p>
+                    한밤중이나 주말에도 스마트폰으로
+                    <br>
+                    시간에 구애받지 않고
+                    <br>
+                    쏘카와 함께 이동하세요.
+                </p>
+                <figure>
+                    <img src="/img/usp_a.jpg" alt="차 옆에서 웃는 남자">
+                </figure>
+            </article>
+
+            <article class="articles">
+                <h3>원하는 곳에서</h3>
+                <p>내 주변 3분 거리 쏘카존에서<br>
+                    혹은 내가 있는 곳으로 쏘카를 불러<br>
+                    어디서나 편하게 출발하세요.
+                </p>
+                <figure>
+                    <img src="/img/usp_b.jpg" alt="차에 기댄 남녀">
+                </figure>
+            </article>
+
+            <article class="articles">
+                <h3>필요한 시간만큼</h3>
+                <p>간단한 장보기부터 주말여행까지<br>
+                    10분 단위로 원하는 만큼만 이용하세요.</p>
+                <figure>
+                    <img src="/img/usp_c.jpg" alt="트렁크를 살피는 남녀">
+                </figure>
+            </article>
+
+            <article class="articles">
+                <h3>다양한 차종을</h3>
+                <p>연인과의 드라이브부터 가족 캠핑까지<br>
+                    상황에 맞게 50여 종의 차량을<br>
+                    선택해서 이용하세요.
+                    </p>
+                <figure>
+                    <img src="/img/usp_d.jpg" alt="차 세 개를 보는 조감도" id = "art-img">
+                </figure>
+            </article>
+        </div>
+    </main>
+
+    <section class = "fullbody">
+        <p id="suggest">
+            <blue>8,474,184</blue>명의 회원이 쏘카와 <br>
+            함께하고 있습니다.<br>
+            지금 바로 <blue>쏘카 드라이브</blue>를<br>
+            시작하세요. 
+        </p>
+    </section>
+
+    <footer class = "fullbody">
         
-        <article3 class = "articles">
-            <h2>필요한 시간만큼</h2>
-        <h2></h2>
-        <br>
-        <p>간단한 장보기부터 주말여행까지<br> 10분 단위로 원하는 만큼만 이용하세요.</p>
-        <img src="/socar/img/usp_c.jpg" alt="man laughing by car" class = article-img>
-        </article3>
+        <ul class="sns-list">
+            <li><a href="#"><img src="/img/i-instagram.svg" alt="인스타그램 하이퍼링크"></a></li>
+            <li><a href="#"><img src="/img/i-facebook.svg" alt="페이스북 하이퍼링크"></a></li>
+            <li><a href="#"><img src="/img/i-youtube.svg" alt="유튜브 하이퍼링크"></a></li>
+            <li><a href="#"><img src="/img/i-blog.svg" alt="네이버 블로그 하이퍼링크"></a></li>
+        </ul>
 
-        <article4 class = "articles">
-            <h2>다양한 차종을</h2>
-            <h2></h2>
-            <br>
-            <p>연인과의 드라이브부터 가족 캠핑까지<br>
-            상황에 맞게 50여 종의 차량을<br> 선택해서 이용하세요. </p>
-            <img src="/socar/img/usp_d.jpg" alt="man laughing by car" class = article-img>
-        </article4>
-    </wrap-section>
-    <suggestion-section>
-        <article class="articles">
-            <span>8464184</span>
-        명의 회원이 쏘카와<br> 함께하고 있습니다.<br>지금 바로 <span>쏘카 드라이브</span>를<br>시작하세요.
-        </article>
-    </suggestion-section>
-</main>
-<footer style="background-color:#374553; height:290px">
-<ul><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""></ul>
-<ul><a href=""></a><a href=""></a><a href=""></a><a href=""></a><a href=""></a><a href=""></a><a href=""></a><a href=""></a><a href=""></a></ul>
-<ul>
-    <li></li>
-    <li></li>
-    <li></li>
-</ul>
-<div>
-    <p></p>
-    <p></p>
-    <p></p>
-</div>
-</footer>
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">인재채용</a></li>
+                <li><a href="#">나눔카</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#" ><strong>개인정보처리방침</strong></a></li>
+                <li><a href="#" ><strong>위치정보 이용약관</strong></a></li>
+                <li><a href="#" ><strong>차량손해면책제도</strong></a></li>
+                <li><a href="#">고객센터</a></li>
+                <li><a href="#">제휴 문의</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer-bottom">
+            <div class="company-information">
+                <dl>
+                    <dt>주소.</dt>
+                    <dd>제주특별자치도 제주시 연미길 42 (오라삼동)</dd>
+                </dl>
+                <dl>
+                    <dt>전화.</dt>
+                    <dd> 1661-3315  </dd>
+                </dl>
+                <dl>
+                    <dt>팩스.</dt>
+                    <dd>02-6969-9333</dd>
+                </dl>
+            </div>
+            <div class="copyright">
+                <p>(주)쏘카 통신판매업 <a href="#" class="underline-link">사업자정보 확인</a></p>
+                <p>신고: 제 2019-제주오라-3호, 사업자등록번호: 616-81-90529, 대표자: 박재욱</p>
+                <p>© 2019 SOCAR All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
