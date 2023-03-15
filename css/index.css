@@ -1,69 +1,87 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700');
-
-@font-face{
-    font-family:'socarfont'; /*글꼴*/
-    src: local('SDMiSaeng'),
-        url(../font/AvenirNextLTPro-Heavy.otf);
-}
-@font-face {
-	font-family: 'sdg-m';
-	src: url('../fonts/SDGothicNeobTTF-dMd.eot');
-	src: url('../fonts/SDGothicNeobTTF-dMd.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/SDGothicNeobTTF-dMd.woff2') format('woff2'),
-	url('../fonts/SDGothicNeobTTF-dMd.woff') format('woff');
-}
-
-*{
-    margin: 0px;
-    padding: 0px;
-    border: 0;
-    vertical-align: baseline;
-    font-family: "socarfont";
-    word-break: break-all;
-}
-
 body{
     overflow-x: hidden;
-    width: 100%;
 }
-#header{
-    background-color: transparent;
-    width:100%;
-    height: 60px;
+header{
     display: flex;
+    width: 100%;
     position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16 16px;
+    box-sizing: border-box;
 }
 
-#socarlogo{
-    width: 112px;
-    position: absolute;
-    top: 50%;
-    left: 40px;
-}
-article>span{
-    color: #0BB8FF;
+.not-transparent{
+    background-color: white;
+    border-bottom: 1px;
+    border-color: black;
+    opacity: 70%;
+    transition: 0.5s;
 }
 
-#logo{
-width: 112px;
-height: 23px;
-color: white;
-z-index: 4;
-position:fixed;
-top:18.5px;
-left:40.8px;
-
+.opacity-zero{
+    opacity: 0;
 }
-.hamberger-patties{
+.blue{
+    fill: #0BB8FF;
+}
+#socar-logo{
+    width:112px;
+    padding: 16px 32px;
+}
+
+#hamberger{
+    width: 40px;
+    height: 25px;
+}
+
+.patty{
+    content: "";
+    display: block;
     width: 23px;
     height: 3px;
-    
+    background-color: white;
+    position: relative;
+    top:10%;
+    right: 40%;
 }
 
+.patty:last-child{
+    top:50%;
+    right: 15%;
+}
+
+#intro-section{
+    background: url(/img/main_visual_fullscreen.jpg);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+h1{
+    font-size: 64px;
+    color:white;
+    text-align: center;
+}
 article img{
     position: relative;
     width: 100%;
     height: auto;
+}
+
+article>h2::after{
+    content: "" ;
+    display: block;
+    position: absolute;
+    right: -16px;
+    bottom: 10px;
+    background-color: #0BB8FF;
+    border-radius: 50%;
+    width:10px;
+    height: 10px;
 }
 
 #copyright{
@@ -129,10 +147,6 @@ h3{
     font-family: "socarfont", 'sdg-m', sans-serif;
 }
 
-blue{
-    color: #0bb8ff;
-}
-
 footer{
     background-color: #28323C;
     width: 100%;
@@ -143,19 +157,17 @@ footer{
     margin:0 auto; text-align:center;
 }
 
+li{
+    list-style: none;
+}
 footer p{
     font-size: 10pt;
     margin-bottom: 0px;
 }
 .sns-list{
-    text-align: left;
+    display: flex;
+    justify-content: left;
     margin-bottom: 16px;
-    padding-left: 300px;
-}
-
-li{
-    display: inline;
-    padding-right: 10px;
 }
 
 nav ul{

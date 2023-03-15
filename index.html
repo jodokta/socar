@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>차가 필요한 모든 순간, 쏘카</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+    <header id = "stc">
+        <a href="#">
+            <figure id = "socar-logo">
+                <img src="/img/logo-w.svg" alt="socar-logo">
+            </figure>
+        </a>
+        <a href="#" id = "hamberger">
+            <span class="patty"></span>
+            <span class="patty"></span>
+        </a>
+
+        <script>
+            window.addEventListener('scroll', ()=>{
+                const header = document.getElementById('stc');
+                const children = document.getElementById('socar-logo');
+                const child2 = document.getElementById('hamberger');
+                if(header.classList.contains('not-transparent')){
+                    header.classList.add('opacity-zero');
+                }else{
+                    header.classList.add('not-transparent');
+                }
+
+            })
+        </script>
+    </header>
+    <section id = "intro-section">
+        
+        <h1>차가 필요한<br> 모든 순간, 쏘카</h1>
+
+    </section>
+    <section id= "body-section">
+        <script>
+            writingArticle("24시간 언제나", "한밤중이나 주말에도 스마트폰으로 시간에 구애받지 않고 쏘카와 함께 이동하세요.", "/img/usp_a.jpg", "차 옆에서 웃는 남자");
+            writingArticle("원하는 곳에서", "내 주변 3분 거리 쏘카존에서 혹은 내가 있는 곳으로 쏘카를 불러 어디서나 편하게 출발하세요.", "/img/usp_b.jpg", "차에 기댄 남녀");
+            writingArticle("필요한 시간만큼", "간단한 장보기부터 주말여행까지 10분 단위로 원하는 만큼만 이용하세요.", "/img/usp_c.jpg", "트렁크에 과자를 담는 남녀");
+            writingArticle("다양한 차종을", "연인과의 드라이브부터 가족 캠핑까지 상황에 맞게 50여 종의 차량을 선택해서 이용하세요.", "/img/usp_d.jpg", "주차장에 주차한 차 3대");
+
+
+            function writingArticle(h2, p, src, alt){
+                document.write(`<article><h2>${h2}</h2><p>${p}</p><figure><img src="${src}" alt="${alt}"></figure></article>`);
+            }
+         </script>
+    </section>
+
+    <div id = "counter">
+
+    </div>
+
+    <footer>
+        <nav>
+            <ul class = "sns-list">
+                <li>
+                    <figure><img src="/img/i-instagram.svg" alt="instagram"></figure>
+                </li>
+                <li>
+                    <figure><img src="/img/i-facebook.svg" alt="facebook"></figure>
+                </li>
+                <li>
+                    <figure><img src="/img/i-youtube.svg" alt="youtube"></figure>
+                </li>
+                <li>
+                    <figure><img src="/img/i-blog.svg" alt="naver blog"></figure>
+                </li>
+            </ul>
+        </nav>
+
+        <ul>
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">인재채용</a></li>
+            <li><a href="#">나눔카</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#"><b>개인정보처리방침</b></a></li>
+            <li><a href="#"><b>위치정보이용약관</b></a></li>
+            <li><a href="#"><b>차량손해면책제도</b></a></li>
+            <li><a href="#">고객센터</a></li>
+            <li><a href="#">제휴 문의</a></li>
+        </ul>
+        <div>
+            <div id = "ct"></div>
+            <dl>
+                <dt></dt>
+                <dt></dt>
+                <dt></dt>
+            </dl>
+
+            <div id = "info"></div>
+                <p></p>
+                <dl>
+                    <dt></dt>
+                    <dt></dt>
+                    <dt></dt>
+                </dl>
+                <p></p>
+        </div>
+    </footer>
+
+</body>
+</html>
