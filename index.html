@@ -11,8 +11,8 @@
 <body>
     <header id = "stc">
         <a href="#">
-            <figure id = "socar-logo">
-                <img src="/img/logo-w.svg" alt="socar-logo">
+            <figure >
+                <img src="/img/logo-w.svg" alt="socar-logo" id = "socar-logo">
             </figure>
         </a>
         <a href="#" id = "hamberger">
@@ -20,42 +20,43 @@
             <span class="patty"></span>
         </a>
 
-        <script>
-            window.addEventListener('scroll', ()=>{
-                const header = document.getElementById('stc');
-                const children = document.getElementById('socar-logo');
-                const child2 = document.getElementById('hamberger');
-                if(header.classList.contains('not-transparent')){
-                    header.classList.add('opacity-zero');
-                }else{
-                    header.classList.add('not-transparent');
-                }
-
-            })
-        </script>
+        <div class="hamberger-modal hide deephide">
+            <nav class = "ham-modal-menu-container">
+                <ul class = "ham-modal-menu-list">
+                    <li class="ham-modal-menu"><a href="#">이용 안내</a></li>
+                    <li class="ham-modal-menu"><a href="#">요금 안내</a></li>
+                    <li class="ham-modal-menu"><a href="#">혜택 안내</a></li>
+                    <li class="ham-modal-menu"><a href="#">쏘카존 개설 신청</a></li>
+                </ul>
+                <ul class = "ham-modal-menu-list">
+                    <li class="ham-modal-menu"><a href="#">쏘카의 서비스</a></li>
+                    <li class="ham-modal-menu"><a href="#">쏘카 비즈니스</a></li>
+                    <li class="ham-modal-menu"><a href="#">쏘카 플랜</a></li>
+                </ul>
+                <ul class = "ham-modal-menu-list">
+                    <li class="ham-modal-menu"><a href="#">회사소개</a></li>
+                    <li class="ham-modal-menu"><a href="#">공고</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
     <section id = "intro-section">
         
         <h1>차가 필요한<br> 모든 순간, 쏘카</h1>
-
     </section>
+
     <section id= "body-section">
-        <script>
-            writingArticle("24시간 언제나", "한밤중이나 주말에도 스마트폰으로 시간에 구애받지 않고 쏘카와 함께 이동하세요.", "/img/usp_a.jpg", "차 옆에서 웃는 남자");
-            writingArticle("원하는 곳에서", "내 주변 3분 거리 쏘카존에서 혹은 내가 있는 곳으로 쏘카를 불러 어디서나 편하게 출발하세요.", "/img/usp_b.jpg", "차에 기댄 남녀");
-            writingArticle("필요한 시간만큼", "간단한 장보기부터 주말여행까지 10분 단위로 원하는 만큼만 이용하세요.", "/img/usp_c.jpg", "트렁크에 과자를 담는 남녀");
-            writingArticle("다양한 차종을", "연인과의 드라이브부터 가족 캠핑까지 상황에 맞게 50여 종의 차량을 선택해서 이용하세요.", "/img/usp_d.jpg", "주차장에 주차한 차 3대");
-
-
-            function writingArticle(h2, p, src, alt){
-                document.write(`<article><h2>${h2}</h2><p>${p}</p><figure><img src="${src}" alt="${alt}"></figure></article>`);
-            }
-         </script>
+        <script src="/js/bodySec.js"></script>
     </section>
 
-    <div id = "counter">
-
-    </div>
+    <section id = "counter">
+        <span id = "number-counting">0 <script src="/js/countUp.js"></script></span>
+        명의 회원이 쏘카와 <br>
+        함께하고 있습니다. <br>
+        지금바로 <span>쏘카 드라이브를</span> <br> 시작하세요.
+        <div id="blue-rect" class = "standby"></div>
+    </section>
 
     <footer>
         <nav>
@@ -104,6 +105,30 @@
                 <p></p>
         </div>
     </footer>
+    <script src="js/index.js"></script>
+
+        <script>
+
+            function MM_reloadPage(init) { //reloads the window if Nav4 resized
+            if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+            document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+            else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+            }
+            MM_reloadPage(true);
+            curPage=1;
+            document.oncontextmenu = function(){return false}
+            if(document.layers) {
+            window.captureEvents(Event.MOUSEDOWN);
+            window.onmousedown = function(e){
+            if(e.target==document)return false;
+            }
+            }
+            else {
+            document.onmousedown = function(){return false}
+            }
+            
+
+            </script>
 
 </body>
 </html>
