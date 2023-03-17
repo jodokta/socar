@@ -7,7 +7,6 @@ const lowerpatty = hamberg[1];
 const modal = document.querySelector('.hamberger-modal');
 const fadeObjects = document.querySelectorAll('.standby');
 const aTags = document.querySelectorAll('a');
-
 window.addEventListener('scroll', ()=>{
     let afterY = window.scrollY;
     const header = document.getElementById('stc');

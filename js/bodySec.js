@@ -7,7 +7,6 @@ makedot()
 function writingArticle(h2, p, src, alt){
     document.write(`<article class = "standby"><h2>${h2}</h2><p>${p}</p><figure><img src="${src}" alt="${alt}"></figure></article>`);
 }
-
 function makedot(){
     const afterElement = document.createElement("span"); // <span></span> 생성
     afterElement.classList.add("afterh2"); // 클래스 추가

@@ -4,7 +4,6 @@ const duration = 3000;
 const interval = 10;
 const increment = Math.ceil(targetCount / (duration / interval));
 let currentCount = 0;
-
 function countUpStart(){
     if (window.scrollY > 2943) {
         const countUpInterval = setInterval(() => {
