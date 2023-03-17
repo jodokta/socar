@@ -6,7 +6,7 @@ const upperpatty = hamberg[0];
 const lowerpatty = hamberg[1];
 const modal = document.querySelector('.hamberger-modal');
 const fadeObjects = document.querySelectorAll('.standby');
-
+const aTags = document.querySelectorAll('a');
 
 window.addEventListener('scroll', ()=>{
     let afterY = window.scrollY;
@@ -62,17 +62,27 @@ hambergerButton.addEventListener('click', (e)=>{
     upperpatty.classList.toggle('blue-patty');
     lowerpatty.classList.toggle('blue-patty');
     logo.classList.toggle('blue-logo');
+    
+    aTags.forEach(a =>{
+        a.classList.toggle('absolute-zero');
+    })
 });
     
 modal.addEventListener('click', ()=>{
     modal.classList.add('hide');
     modal.classList.add('deephide');
+    aTags.forEach(a =>{
+        a.classList.remove('absolute-zero');
+    })
 })
 
 window.addEventListener("keydown", (e) => {
     if (e.key ==='Escape'){
         modal.classList.add('hide');
         modal.classList.add('deephide');
+        aTags.forEach(a =>{
+            a.classList.remove('absolute-zero');
+        })
     };
   });
 
